@@ -16,9 +16,11 @@
 
 
   e a latest
+  
   docker push seuuser/conversao-temperatura:latest
 
   execute o container
+  
   docker container run -d -p 8080:8080 seuuser/conversao-temperatura:v1
   
   No navegador digite http://localhost:8080, para visualizar a aplicação.
