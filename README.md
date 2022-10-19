@@ -1,7 +1,19 @@
 # Projeto conversão de temperatura
 
-### Sobre o projeto
-O projeto conversão de temperatura é um projeto desenvolvido em NodeJS. O projeto tem como objetivo ser um exemplo para a criação de ambiente com containers usando NodeJS.
+### Passos para execução do container
 
-### Observações do projeto
-A aplicação é exposta usando a porta 8080
+  Com o docker instalado realize o download do projeto.
+  Navegue até o conversao-temperatura/src/
+  execute o comando :
+  docker  build -t seuuser/conversao-temperatura:v1 .
+
+  Para realizar o push da sua imagem para o Hubdocker
+  docker push seuuser/conversao-temperatura:v1
+  e a latest
+  docker push seuuser/conversao-temperatura:latest
+
+  execute o container
+  docker container run -d -p 8080:8080 seuuser/conversao-temperatura:v1
+  
+  No navegador digite http://localhost:8080, para visualizar a aplicação.
+
