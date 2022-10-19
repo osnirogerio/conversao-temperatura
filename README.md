@@ -3,12 +3,18 @@
 ### Passos para execução do container
 
   Com o docker instalado realize o download do projeto.
+  
   Navegue até o conversao-temperatura/src/
+  
   execute o comando :
+  
   docker  build -t seuuser/conversao-temperatura:v1 .
 
   Para realizar o push da sua imagem para o Hubdocker
+  
   docker push seuuser/conversao-temperatura:v1
+
+
   e a latest
   docker push seuuser/conversao-temperatura:latest
 
