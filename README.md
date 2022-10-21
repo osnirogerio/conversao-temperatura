@@ -26,6 +26,8 @@
   No navegador digite http://localhost:8080, para visualizar a aplicação.
 
 ### aula 02 
+k3d cluster create meucluster -p "80:30000@loadbalancer"
+
 docker build -t seuuser/conversao-temperatura:v1 .
 
 docker image ls
