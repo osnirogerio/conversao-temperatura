@@ -31,10 +31,12 @@ docker build -t seuuser/conversao-temperatura:v1 .
 docker image ls
 
 docker push seuuser/conversao-temperatura:v1
+
 docker tag seuuser/conversao-temperatura:v1 seuuser/conversao-temperatura:latest
 
 
 docker push seuuser/conversao-temperatura:latest
 
 cd k8s
+
 kubectl apply -f deployment.yaml
